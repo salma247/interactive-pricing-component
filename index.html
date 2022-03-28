@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+
+<body>
+
+  <div class="hero">
+    <h1>
+      Simple, traffic-based pricing
+    </h1>
+    <p>Sign-up for our 30-day trial. No credit card required. </p>
+  </div>
+
+  <div class="card">
+    <div class="price">
+      <div class="page-views-component">
+        <p><span id="page-views">100</span> Pageviews</p>
+      </div>
+      <div class="page-view-range">
+        <input type="range" min="1" max="5" value="3" class="slider" id="viewsRange">
+      </div>
+      <div class="price-view">
+        <span ID="price">$</span>
+        <p> /month</p>
+      </div>
+    </div>
+
+    <div class="monthly-yearly">
+      <h2>Monthly Billing</h2>
+      <label class="switch">
+        <input type="checkbox" id="month-year">
+        <span class="slider round"></span>
+      </label>
+      <h2>Yearly Billing <span class="discount">-25%</span></h2>
+    </div>
+    <hr>
+    <div class="features">
+      <ul>
+        <li><img src="./images/icon-check.svg" alt="">Unlimited websites</li>
+        <li><img src="./images/icon-check.svg" alt="">100% data ownership</li>
+        <li><img src="./images/icon-check.svg" alt="">Email reports</li>
+      </ul>
+      <button class="btn">Start my trial</button>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
